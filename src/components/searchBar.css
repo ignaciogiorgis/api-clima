@@ -1,0 +1,7 @@
+.cont-form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    column-gap: 10px;
+}

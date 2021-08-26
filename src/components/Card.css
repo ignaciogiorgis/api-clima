@@ -1,10 +1,17 @@
 .card {
   margin: 20px;
-  width: 18rem;
+  width: 25rem;
+  height: 17rem;
+  background: url(../img/nubes.jpg);
+  background-size: cover;
+  border: black solid 1px;
 }
 
 .card-title {
   margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
 }
 
 #closeIcon {
@@ -17,4 +24,13 @@
 .card-body {
   margin-top: 0px !important;
   padding-top: 0px !important;
+}
+
+.max-min p{
+  font-weight: bold;
+}
+
+.img-fondo{
+  background-color: rgba(255, 217, 0, 0.377);
+  border-radius: 50%;
 }

@@ -1,21 +1,22 @@
 import React, { useState } from "react";
+import './searchBar.css' 
 
 export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");
   return (
-    <form className="container-fluid" onSubmit={(e) => {
+    <form className="" onSubmit={(e) => {
       e.preventDefault();
       onSearch(city);
     }}>
-      <div className="row">
+      <div className="cont-form">
         <input
-          className="col-2"
+          className=""
           type="text"
           placeholder="Ciudad..."
           value={city}
           onChange={e => setCity(e.target.value)}
         />
-        <input className="btn btn-outline-primary col-1 input-group " type="submit" value="Agregar" />
+        <input className="" type="submit" value="Agregar" />
       </div>
     </form>
   );

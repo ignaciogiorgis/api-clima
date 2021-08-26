@@ -1,2 +1,19 @@
+.nav-principal{
+    background-color: rgba(255, 238, 0, 0.699);
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    padding: 40px;
+}
+
+.title h3{
+    font-size: 40px;
+    font-weight: bold;
+   
+}
+
 
 
