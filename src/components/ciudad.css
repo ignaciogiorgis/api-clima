@@ -1,0 +1,26 @@
+.ciudad{
+    border: none;
+    width: 500px;
+    margin: 30px auto;
+    height: 420px ;
+    background: url('../img/nubes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+ p{
+     font-weight: bold;
+ }
+ h2{
+     font-weight: bold;
+     font-size: 40px;
+     margin-top: 20px;
+ }
+ .container-detail{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     row-gap: 30px;
+    
+ }

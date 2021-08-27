@@ -13,12 +13,12 @@ function App() {
   function onClose(id) {
     setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
+  
   function onSearch(ciudad) {
     //Llamado a la API del clima
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`)
       .then(r => r.json())
       .then((recurso) => {
-        console.log(recurso);
         if(recurso.main !== undefined){
           const ciudad = {
             min: Math.round(recurso.main.temp_min),
@@ -55,7 +55,7 @@ function App() {
     <div>
        
         <Route 
-           path='/' render={() => <Cards cities={cities} onClose={onClose} /> } 
+          exact path='/' render={() => <Cards cities={cities} onClose={onClose} /> } 
         />
         <Route
           exact
