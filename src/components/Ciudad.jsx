@@ -4,17 +4,10 @@ import {Link} from 'react-router-dom';
 
 export default function Ciudad({city}) {
     
-    if(city === null){
-        return (
-            <div>
-                <div>Elige Tu ciudad Nuevamente</div>
-                <Link to="/">
-                    <button className="btn btn-primary">Regresar</button>
-                </Link>
-            </div>
-        )
+    if(!city){
+        return <h2>Elige Tu ciudad Nuevamente</h2>
     }
-        return (
+    return (
             <div className="ciudad">
                     <div className="container-detail">
                         <h2>{city.name}</h2>

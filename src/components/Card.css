@@ -2,9 +2,7 @@
   margin: 20px;
   width: 25rem;
   height: 17rem;
-  background: #ee0979;  
-  background: -webkit-linear-gradient(to bottom, #ff6a00, #ee0979); 
-  background: linear-gradient(to bottom, #ff6a00, #ee0979); 
+  background: rgba(255, 255, 255, 0.253);
   box-shadow: rgba(0, 0, 0, 0.555) 5px 5px;
   
   border: black solid 1px;

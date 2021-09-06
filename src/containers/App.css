@@ -1,8 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
+body{
+  background: url(../img/clima.jpg);
 }
