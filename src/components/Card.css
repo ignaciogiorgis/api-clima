@@ -2,12 +2,25 @@
   margin: 20px;
   width: 25rem;
   height: 17rem;
-  background: rgba(255, 255, 255, 0.253);
+  background: rgba(0, 0, 0, 0.253);
   box-shadow: rgba(0, 0, 0, 0.555) 5px 5px;
   
   border: black solid 1px;
 }
+.card-sec{
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 30px;  
+  }
 
+
+@media only screen and (max-width: 450px){
+   .card-sec{
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+}
 .card-title {
   margin-bottom: 15px;
   font-weight: bold;
@@ -35,5 +48,7 @@
   -webkit-transform:scale(1.5);transform:scale(1.5);
   overflow:hidden
 }
+
+
 
 

@@ -15,5 +15,19 @@
    
 }
 
+@media only screen and (max-width: 450px){
+    .nav-principal{
+    
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .title{
+       display: none;
+    }
+    
+}
+
 
 

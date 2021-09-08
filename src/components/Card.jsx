@@ -4,6 +4,7 @@ import { Link} from 'react-router-dom';
 
 
 export default function Card ({min, max, name, img, onClose, id}) {
+  
     return (
       <div className="card">
         <div id="closeIcon" className="row">
@@ -13,16 +14,16 @@ export default function Card ({min, max, name, img, onClose, id}) {
         <Link to={`/ciudad/${id}`} >
             <h5 className="card-title">{name}</h5>
         </Link>
-          <div className="row">
-            <div className="col-sm-4 col-md-4 col-lg-4 max-min">
+          <div className="row card-sec">
+            <div className=" max-min">
               <p>Min</p>
               <p>{Math.ceil(min-273.15)}°</p>
             </div>
-            <div className="col-sm-4 col-md-4 col-lg-4 max-min">
+            <div className=" max-min">
               <p>Max</p>
               <p>{Math.ceil(max-273.15)}°</p>
             </div>
-            <div className="col-sm-4 col-md-4 col-lg-4 img-fondo">
+            <div className=" img-fondo">
               <img className="iconoClima" src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} width="80" height="80" alt="" />
             </div>
           </div>
